@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Greedy algorithm/Greedy algorithm.iml" filepath="$PROJECT_DIR$/Greedy algorithm/Greedy algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/[0000][common]/[0000][common].iml" filepath="$PROJECT_DIR$/[0000][common]/[0000][common].iml" />
       <module fileurl="file://$PROJECT_DIR$/[0001][Two Sum]/[0001][Two Sum].iml" filepath="$PROJECT_DIR$/[0001][Two Sum]/[0001][Two Sum].iml" />
       <module fileurl="file://$PROJECT_DIR$/[0002][Add Two Numbers]/[0002][Add Two Numbers].iml" filepath="$PROJECT_DIR$/[0002][Add Two Numbers]/[0002][Add Two Numbers].iml" />
@@ -289,6 +290,7 @@
       <module fileurl="file://$PROJECT_DIR$/[0979][Distribute Coins in Binary Tree]/[0979][Distribute Coins in Binary Tree].iml" filepath="$PROJECT_DIR$/[0979][Distribute Coins in Binary Tree]/[0979][Distribute Coins in Binary Tree].iml" />
       <module fileurl="file://$PROJECT_DIR$/[1089][Duplicate Zeros]/[1089][Duplicate Zeros].iml" filepath="$PROJECT_DIR$/[1089][Duplicate Zeros]/[1089][Duplicate Zeros].iml" />
       <module fileurl="file://$PROJECT_DIR$/[1108][Defanging an IP Address]/[1108][Defanging an IP Address].iml" filepath="$PROJECT_DIR$/[1108][Defanging an IP Address]/[1108][Defanging an IP Address].iml" />
+      <module fileurl="file://$PROJECT_DIR$/jianglai_algorithm/jianglai_algorithm.iml" filepath="$PROJECT_DIR$/jianglai_algorithm/jianglai_algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode.iml" filepath="$PROJECT_DIR$/leetcode.iml" />
     </modules>
   </component>

@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="leetcode" />
+        <module name="Greedy algorithm" />
+        <module name="jianglai_algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Greedy algorithm" target="1.5" />
+      <module name="jianglai_algorithm" target="1.5" />
       <module name="leetcode" target="1.5" />
     </bytecodeTargetLevel>
   </component>
