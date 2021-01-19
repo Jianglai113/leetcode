@@ -1,7 +1,7 @@
 package com.jianglai.greedy.algorithm;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.math.BigDecimal;
+import java.util.*;
 
 /**
  * @author leon
@@ -27,21 +27,22 @@ public class NoOverlappingInterval {
         System.out.println(intervalsArray.toString());
 
         // 对其排序-按照区间大小
-        sortIntervalsArray(intervalsArray);
+        TreeMap<Integer, ArrayList<Integer>>  sortTreeMap = sortIntervalsArray(intervalsArray);
+        System.out.println("排序后的区间数组："+sortTreeMap.toString());
 
 
     }
 
-    private static ArrayList<ArrayList<Integer>> sortIntervalsArray(ArrayList<ArrayList<Integer>> intervalsArray) {
+    private static TreeMap<Integer, ArrayList<Integer>>  sortIntervalsArray(ArrayList<ArrayList<Integer>> intervalsArray) {
         ArrayList<ArrayList<Integer>> newintervalsArray = new ArrayList<ArrayList<Integer>>();
-        // 根据区间尾的大小排序
+        BubbleSort bubbleSort = new BubbleSort();
+        TreeMap<Integer, ArrayList<Integer>> dataTreemap = new TreeMap<Integer, ArrayList<Integer>>();
+        // 利用TreeMap根据区间尾的大小排序
         for(int i=0; i<intervalsArray.size()-1; i++){
-//            for(){
-//
-//            }
+            dataTreemap.put(intervalsArray.get(i).get(1), intervalsArray.get(i));
         }
 
-        return null;
+        return dataTreemap;
     }
 
     private static ArrayList<ArrayList<Integer>> getIntervalsArray(Scanner scanner) {
@@ -59,3 +60,4 @@ public class NoOverlappingInterval {
         return arrayLists;
     }
 }
+

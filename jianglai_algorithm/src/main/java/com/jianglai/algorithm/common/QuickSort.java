@@ -2,8 +2,7 @@ package com.jianglai.algorithm.common;
 
 import jdk.nashorn.internal.parser.JSONParser;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author leon
@@ -28,6 +27,7 @@ public class QuickSort {
         // 快速排序
         ArrayList<Integer> quickSortResult = quickSort(dataArray, 0, dataArray.size()-1);
         System.out.println("快速排序结果："+quickSortResult.toString());
+
     }
 
     /**
