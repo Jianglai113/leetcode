@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce385e91-de99-4e13-9d76-ab57b6a23494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Greedy algorithm/src/main/java/com/jianglai/greedy/algorithm/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianglai_algorithm/src/test/LinkedHashMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/tree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/tree/TreeNodeArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/tree/testTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Greedy algorithm/src/main/java/com/jianglai/greedy/algorithm/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Greedy algorithm/src/main/java/com/jianglai/greedy/algorithm/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Greedy algorithm/src/main/java/com/jianglai/greedy/algorithm/NoOverlappingInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/Greedy algorithm/src/main/java/com/jianglai/greedy/algorithm/NoOverlappingInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianglai_algorithm/jianglai_algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jianglai_algorithm/jianglai_algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/common/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/jianglai_algorithm/src/main/java/com/jianglai/algorithm/common/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/terra-ccu-flink" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.124843955" />
@@ -93,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoOverlappingInterval">
+  <component name="RunManager" selected="Application.testTree">
     <configuration name="BubbleSort (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jianglai.greedy.algorithm.BubbleSort" />
       <module name="Greedy algorithm" />
@@ -140,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jianglai.algorithm.common.QuickSort" />
+    <configuration name="testTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianglai.algorithm.tree.testTree" />
       <module name="jianglai_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jianglai.algorithm.common.*" />
+          <option name="PATTERN" value="com.jianglai.algorithm.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,17 +164,17 @@
     <list>
       <item itemvalue="Application.NoOverlappingInterval" />
       <item itemvalue="Application.BubbleSort" />
-      <item itemvalue="Application.QuickSort" />
       <item itemvalue="Application.LinkedHashMapTest" />
       <item itemvalue="Application.BubbleSort (1)" />
+      <item itemvalue="Application.testTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testTree" />
         <item itemvalue="Application.NoOverlappingInterval" />
         <item itemvalue="Application.BubbleSort (1)" />
-        <item itemvalue="Application.LinkedHashMapTest" />
-        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.LinkedHashMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +249,8 @@
       <workItem from="1610764439854" duration="2712000" />
       <workItem from="1610767214939" duration="18910000" />
       <workItem from="1610936564780" duration="8450000" />
-      <workItem from="1611058026788" duration="4019000" />
+      <workItem from="1611058026788" duration="4096000" />
+      <workItem from="1611107153302" duration="16033000" />
     </task>
     <task id="LOCAL-00040" summary="commit">
       <created>1560552440693</created>
@@ -604,30 +606,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="273" width="374" height="558" key="#com.intellij.ide.util.MemberChooser" timestamp="1610937972540">
+    <state x="768" y="273" width="564" height="554" key="#com.intellij.ide.util.MemberChooser" timestamp="1611147884002">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="768" y="273" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1610937972540" />
-    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl" timestamp="1610961251316">
+    <state x="768" y="273" width="564" height="554" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1611147884002" />
+    <state x="1173" y="300" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611142527959">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1610961251316" />
-    <state width="1866" height="551" key="GridCell.Tab.0.bottom" timestamp="1611061763175">
+    <state x="1173" y="300" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1611142527959" />
+    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl" timestamp="1611215552947">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1866" height="551" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1611061763175" />
-    <state width="1866" height="551" key="GridCell.Tab.0.center" timestamp="1611061763175">
+    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1611215552947" />
+    <state width="906" height="281" key="GridCell.Tab.0.bottom" timestamp="1611148947233">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1866" height="551" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1611061763175" />
-    <state width="1866" height="551" key="GridCell.Tab.0.left" timestamp="1611061763174">
+    <state width="906" height="281" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1611148947233" />
+    <state width="906" height="281" key="GridCell.Tab.0.center" timestamp="1611148947232">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1866" height="551" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1611061763174" />
-    <state width="1866" height="551" key="GridCell.Tab.0.right" timestamp="1611061763175">
+    <state width="906" height="281" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1611148947232" />
+    <state width="906" height="281" key="GridCell.Tab.0.left" timestamp="1611148947232">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1866" height="551" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1611061763175" />
+    <state width="906" height="281" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1611148947232" />
+    <state width="906" height="281" key="GridCell.Tab.0.right" timestamp="1611148947232">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="906" height="281" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1611148947232" />
     <state x="443" y="379" width="1436" height="600" key="new project wizard" timestamp="1610767336463">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

@@ -28,8 +28,8 @@ public class BubbleSort {
      * @param dataArrayList
      */
     private static void sortByBubbleSort(ArrayList<Integer> dataArrayList) {
-        for(int i = dataArrayList.size()-1; i >= 0 ; i--){
-            for(int j=0; j < i; j++){
+        for(int i=dataArrayList.size()-2; i>=0; i--){
+            for(int j=0; j<i+1; j++){
                 if(dataArrayList.get(j) > dataArrayList.get(j+1)){
                     swap(dataArrayList, j, j+1);
                 }
@@ -44,7 +44,7 @@ public class BubbleSort {
      * @param right
      */
     private static void swap(ArrayList<Integer> dataArrayList, int left, int right) {
-        int tmp = right;
+        int tmp = dataArrayList.get(right);
         dataArrayList.set(right, dataArrayList.get(left));
         dataArrayList.set(left, tmp);
     }

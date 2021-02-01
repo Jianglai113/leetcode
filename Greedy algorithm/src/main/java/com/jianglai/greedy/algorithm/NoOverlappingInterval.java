@@ -27,22 +27,60 @@ public class NoOverlappingInterval {
         System.out.println(intervalsArray.toString());
 
         // 对其排序-按照区间大小
-        TreeMap<Integer, ArrayList<Integer>>  sortTreeMap = sortIntervalsArray(intervalsArray);
-        System.out.println("排序后的区间数组："+sortTreeMap.toString());
+        LinkedList<ArrayList<Integer>>  sortIntegerList = sortIntervalsArray(intervalsArray);
+        System.out.println("排序后的区间数组："+sortIntegerList.toString());
 
+        // 判断最少减少几个区间
+        HashMap<Integer, ArrayList<ArrayList<Integer>>> result = getResultHashMap(sortIntegerList);
+        System.out.println("最少减少："+result.keySet().toArray()[0]+"个区间，这个区间是："+ result.get(result.keySet().toArray()[0]).toString());
 
     }
 
-    private static TreeMap<Integer, ArrayList<Integer>>  sortIntervalsArray(ArrayList<ArrayList<Integer>> intervalsArray) {
+    /**
+     * 判断最少减少几个区间
+     * @param sortIntegerList
+     * @return
+     */
+    private static HashMap<Integer, ArrayList<ArrayList<Integer>>> getResultHashMap(LinkedList<ArrayList<Integer>> sortIntegerList) {
+        HashMap<Integer, ArrayList<ArrayList<Integer>>> result = new HashMap<Integer, ArrayList<ArrayList<Integer>>>();
+        ArrayList<ArrayList<Integer>> dataArrayList = new ArrayList<ArrayList<Integer>>();
+        Integer num = 0;
+        for(int i=0; i<sortIntegerList.size()-1; i++){
+            boolean flag = true;
+            while(flag){
+                if(sortIntegerList.get(i).get(1) > sortIntegerList.get(i+1).get(0)){
+                    dataArrayList.add(sortIntegerList.get(i+1));
+                    sortIntegerList.remove(i+1);
+                    num +=1;
+                }else{
+                    flag = false;
+                    break;
+                }
+                if(i == sortIntegerList.size()-1){
+                    flag = false;
+                    break;
+                }
+            }
+
+        }
+        result.put(num, dataArrayList);
+        return result;
+    }
+
+    private static LinkedList<ArrayList<Integer>>  sortIntervalsArray(ArrayList<ArrayList<Integer>> intervalsArray) {
         ArrayList<ArrayList<Integer>> newintervalsArray = new ArrayList<ArrayList<Integer>>();
-        BubbleSort bubbleSort = new BubbleSort();
         TreeMap<Integer, ArrayList<Integer>> dataTreemap = new TreeMap<Integer, ArrayList<Integer>>();
+        LinkedList<ArrayList<Integer>> integersList= new LinkedList<ArrayList<Integer>>();
+        Integer[] integerArray = new Integer[intervalsArray.size()];
         // 利用TreeMap根据区间尾的大小排序
-        for(int i=0; i<intervalsArray.size()-1; i++){
+        for(int i=0; i<intervalsArray.size(); i++){
             dataTreemap.put(intervalsArray.get(i).get(1), intervalsArray.get(i));
         }
-
-        return dataTreemap;
+        dataTreemap.keySet().toArray(integerArray);
+        for(int i=0; i < intervalsArray.size(); i++){
+            integersList.add(dataTreemap.get(integerArray[i]));
+        }
+        return integersList;
     }
 
     private static ArrayList<ArrayList<Integer>> getIntervalsArray(Scanner scanner) {
